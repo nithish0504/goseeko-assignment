@@ -1,0 +1,126 @@
+#### Register User Request#### Register User Request
+
+POST http://localhost:3000/register/
+Content-Type: application/json
+
+{    
+    "userName": "nithishArram",
+    "gotemail": "nithish0504@gmail.com",
+    "gotpassword": "passkey"
+}
+
+### User Login Request
+POST http://localhost:3000/login/
+Content-Type: application/json
+
+{    
+    "userEmail":"nithish0504@gmail.com",
+    "userPassword": "passkey"
+}
+
+
+
+
+#### Get All Users Request
+GET http://localhost:3000/courses
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im5pdGhpc2gwNTA0QGdtYWlsLmNvbSIsImlhdCI6MTYyNDcxMDM0MX0.YA9od6etMZSyhcLvY4Rh7KMJjGw9R38gpABxLHiqSVw
+
+
+
+
+
+
+
+
+
+POST http://localhost:3000/senduser/
+Content-Type: application/json
+
+{    
+    "userId": 6,
+    "firstName": "Katkuri",
+    "lastName": "Sanjay",
+    "gotphoneNumber":9603029994,
+    "password": "passkey",
+    "age": 18,
+    "aadharNumber":578963541264,
+    "city":"Warangal",
+    "pincode":506002
+}
+
+### User Login Request
+POST http://localhost:3000/login/
+Content-Type: application/json
+
+{    
+    "gotphoneNumber":9603029998,
+    "gotpassword": "passkey"
+}
+
+
+### Admin Login Request
+POST http://localhost:3000/adminlogin/
+Content-Type: application/json
+
+{    
+    "gotusername":"nithish",
+    "gotpassword": "passkey"
+}
+
+
+#### Get All Users Request only for Admin
+GET http://localhost:3000/users/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2MjM1ODA0OTh9.JPHnnR6dfPNKEkq7RjBBJ9HTMjT8gnUooy6N3BI7cL4
+
+
+### Get User By Id Request only for Admin
+GET http://localhost:3000/users/6
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2MjM1ODA0OTh9.JPHnnR6dfPNKEkq7RjBBJ9HTMjT8gnUooy6N3BI7cL4
+
+
+###
+GET http://localhost:3000/slots
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2MjM1ODA0OTh9.JPHnnR6dfPNKEkq7RjBBJ9HTMjT8gnUooy6N3BI7cL4
+
+###
+GET http://localhost:3000/slots/2
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwaG9uZU51bWJlciI6OTYwMzAyOTk5OCwiaWF0IjoxNjIzNjM5OTQ4fQ.-5D8fyyFZ9AhaKb0fQR-Nk0wkjQklE0TQOAYRY000NQ
+
+###Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwaG9uZU51bWJlciI6OTk4NTkwOTk5NiwiaWF0IjoxNjIzNjAwMzg1fQ.E-0E0T4cHvXY7uZFO5cW1fnF6SbcqxmvkTpGpqIpn6Y
+
+### User Login Request
+POST http://localhost:3000/slotbook/
+Content-Type: application/json
+
+{    
+    "gotphoneNumber1":9603029998,
+    "gotdate":"27-June-2021",
+    "gottime": 0
+}
+
+### User Login Request
+POST http://localhost:3000/slotedit/
+Content-Type: application/json
+
+{    
+    "gotphoneNumber2":9603029998,
+    "newdate":"29-June-2021",
+    "newtime":5
+}
+
+
+####
+GET http://localhost:3000/usersk/?vaccinestatus=none
+
+
+#### 
+GET http://localhost:3000/userstore
+
+
+
+
+
+
+
+
+
