@@ -36,6 +36,13 @@ function convertCourseObjectToCourse(obj, arr) {
   arr.push(obj.course);
 }
 
+function extractStreams(obj) {
+  return {
+    streams: obj.streams,
+    universities: obj.universities,
+  };
+}
+
 //Get Users API Start
 app.get("/courses", async (request, response) => {
   let courses_array = await db
@@ -52,3 +59,12 @@ app.get("/courses", async (request, response) => {
 });
 
 //Get Users API End
+
+app.get("/streams/:course", async (request, response) => {
+  let { course } = request.params;
+  let result_obj = await db
+    .collection("course")
+    .findOne({ course: course }, { course_id: 0, course: 0, streams: 1 });
+  let streams_array = extractStreams(result_obj);
+  response.send(streams_array);
+});

@@ -25,7 +25,8 @@ Content-Type: application/json
 GET http://localhost:3000/courses
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im5pdGhpc2gwNTA0QGdtYWlsLmNvbSIsImlhdCI6MTYyNDcxMDM0MX0.YA9od6etMZSyhcLvY4Rh7KMJjGw9R38gpABxLHiqSVw
 
-
+#### Get All Users Request
+GET http://localhost:3000/streams/Bcom
 
 
 
